@@ -6,9 +6,9 @@
   align-items: center;
   gap: 3px;
   padding: 5px;
-  border: 1px solid grey;
-  background-color: lightgrey;
-  color: darkblue;
+  border: 1px solid #a0a0a0;
+  background-color: #ebebeb;
+  color: #124370;
   font-size: 20px;
   line-height: 1;
   cursor: pointer;
@@ -16,26 +16,27 @@
   transition: background-color 1s;
 
   &:hover {
-    background-color: darkgrey;
+    background-color: #dbdbdb;
   }
 }
 
 .buttonSelected {
-  background-color: white;
+  background-color: #ffffff;
 
   &:hover {
-    background-color: white;
+    background-color: #ffffff;
   }
 }
 
 .checkbox {
   color: transparent;
-  font-size: 16px;
-  border: 1px solid grey;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid #a0a0a0;
   border-radius: 5px;
-  padding: 1px;
+  padding: 0 2px;
 }
 
 .checkboxSelected {
-  color: red;
+  color: #ff0200;
 }

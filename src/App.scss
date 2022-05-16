@@ -11,11 +11,11 @@
   flex-flow: column;
   justify-content: stretch;
   align-items: center;
-  padding: 10px;
+  padding: 15px;
   gap: 30px;
-  border: 1px solid black;
+  border: 1px solid #a0a0a0;
   border-radius: 5px;
-  box-shadow: gray 2px 2px 2px;
+  box-shadow: #323232 1px 1px 2px;
 }
 
 .selector-container__row {
@@ -33,4 +33,9 @@
   column-gap: 5px;
   row-gap: 10px;
   width: 100%;
+}
+
+.selector-container__grid--list {
+  column-gap: 10px;
+  row-gap: 15px;
 }

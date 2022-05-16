@@ -21,13 +21,15 @@ const App = () => {
     <div className="app">
       <div className="selector-container">
         <div className="selector-container__row">
-          {selectedCurrencies.map((currency) => (
-            <CurrencyBox
-              key={currency}
-              title={currency}
-              onClick={() => filterOut(currency)}
-            />
-          ))}
+          <div className="selector-container__grid selector-container__grid--list">
+            {selectedCurrencies.map((currency) => (
+              <CurrencyBox
+                key={currency}
+                title={currency}
+                onClick={() => filterOut(currency)}
+              />
+            ))}
+          </div>
         </div>
         <div className="selector-container__row">
           <div className="selector-container__grid">
