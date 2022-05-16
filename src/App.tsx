@@ -19,9 +19,9 @@ const App = () => {
 
   return (
     <div className="app">
-      <div className="selector-container">
-        <div className="selector-container__row">
-          <div className="selector-container__grid selector-container__grid--list">
+      <div className="container">
+        <div className="container__row">
+          <div className="container__grid container__grid--list">
             {selectedCurrencies.map((currency) => (
               <CurrencyBox
                 key={currency}
@@ -31,8 +31,8 @@ const App = () => {
             ))}
           </div>
         </div>
-        <div className="selector-container__row">
-          <div className="selector-container__grid">
+        <div className="container__row">
+          <div className="container__grid">
             {currencies.map((currency) => (
               <Button
                 key={currency}

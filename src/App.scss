@@ -6,19 +6,19 @@
   height: 100vh;
 }
 
-.selector-container {
+.container {
   display: flex;
   flex-flow: column;
   justify-content: stretch;
   align-items: center;
-  padding: 15px;
+  padding: 25px 15px 15px;
   gap: 30px;
   border: 1px solid #a0a0a0;
   border-radius: 5px;
   box-shadow: #323232 1px 1px 2px;
 }
 
-.selector-container__row {
+.container__row {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
@@ -27,7 +27,7 @@
   width: 100%;
 }
 
-.selector-container__grid {
+.container__grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 5px;
@@ -35,7 +35,7 @@
   width: 100%;
 }
 
-.selector-container__grid--list {
+.container__grid--list {
   column-gap: 10px;
   row-gap: 15px;
 }
