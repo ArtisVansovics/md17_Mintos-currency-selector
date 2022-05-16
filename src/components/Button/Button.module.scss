@@ -16,12 +16,26 @@
   transition: background-color 1s;
 
   &:hover {
+    background-color: darkgrey;
+  }
+}
+
+.buttonSelected {
+  background-color: white;
+
+  &:hover {
     background-color: white;
   }
 }
 
 .checkbox {
+  color: transparent;
+  font-size: 16px;
   border: 1px solid grey;
   border-radius: 5px;
-  padding: 7px;
+  padding: 1px;
+}
+
+.checkboxSelected {
+  color: red;
 }
