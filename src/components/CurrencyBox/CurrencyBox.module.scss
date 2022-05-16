@@ -1,0 +1,11 @@
+.box {
+  min-width: 100px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-color: lightgrey;
+  font-size: 18px;
+  border-radius: 5px;
+}

@@ -11,27 +11,26 @@
   flex-flow: column;
   justify-content: stretch;
   align-items: center;
-  padding: 20px;
-  gap: 16px;
+  padding: 10px;
+  gap: 30px;
   border: 1px solid black;
   border-radius: 5px;
+  box-shadow: gray 2px 2px 2px;
 }
 
 .selector-container__row {
+  display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-  width: 100%;
-  padding: 10px;
-}
-
-.box--stretch {
-  align-items: stretch;
   justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
 }
 
 .selector-container__grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+  column-gap: 5px;
+  row-gap: 10px;
   width: 100%;
 }

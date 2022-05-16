@@ -3,16 +3,15 @@ import styles from './Button.module.scss';
 
 type ButtonProps = {
   title: string
-  onClick?: () => void
-  disabled?: boolean;
+  onClick: () => void
 }
 
-const Button:FC<ButtonProps> = ({ title, onClick, disabled }) => (
+const Button:FC<ButtonProps> = ({ title, onClick }) => (
   <button
     className={styles.button}
     onClick={onClick}
-    disabled={disabled}
   >
+    <div className={styles.checkbox} />
     {title}
   </button>
 );
