@@ -20,28 +20,24 @@ const App = () => {
   return (
     <div className="app">
       <div className="container">
-        <div className="container__row">
-          <div className="container__grid container__grid--list">
-            {selectedCurrencies.map((currency) => (
-              <CurrencyBox
-                key={currency}
-                title={currency}
-                onClick={() => filterOut(currency)}
-              />
-            ))}
-          </div>
+        <div className="container__grid container__grid--list">
+          {selectedCurrencies.map((currency) => (
+            <CurrencyBox
+              key={currency}
+              title={currency}
+              onClick={() => filterOut(currency)}
+            />
+          ))}
         </div>
-        <div className="container__row">
-          <div className="container__grid">
-            {currencies.map((currency) => (
-              <Button
-                key={currency}
-                title={currency}
-                selected={selectedCurrencies.includes(currency)}
-                onClick={() => toggleCurrency(currency)}
-              />
-            ))}
-          </div>
+        <div className="container__grid">
+          {currencies.map((currency) => (
+            <Button
+              key={currency}
+              title={currency}
+              selected={selectedCurrencies.includes(currency)}
+              onClick={() => toggleCurrency(currency)}
+            />
+          ))}
         </div>
       </div>
     </div>
