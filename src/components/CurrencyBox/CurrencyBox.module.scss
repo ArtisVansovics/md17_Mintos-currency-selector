@@ -1,12 +1,12 @@
 .box {
-  min-width: 100px;
+  min-width: 130px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  padding: 3px;
+  padding: 10px;
   background-color: #e4e4e4;
-  font-size: 18px;
+  font-size: 16px;
   position: relative;
 }
 
@@ -15,13 +15,12 @@
   color: #ffffff;
   font-size: 12px;
   font-weight: 600;
-  line-height: 1;
   border-radius: 50%;
   border: 2px solid #ffffff;
   position: absolute;
-  right: -5px;
-  top: -5px;
-  padding: 2px 4px;
+  right: -8px;
+  top: -8px;
+  padding: 3px 5px;
   cursor: pointer;
   user-select: none;
   transition: background-color 0.4s;
