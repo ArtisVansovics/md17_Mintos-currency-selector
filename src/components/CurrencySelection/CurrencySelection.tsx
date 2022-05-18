@@ -33,7 +33,6 @@ const CurrencySelection = () => {
           <Button
             key={currency}
             title={currency}
-            selected={selectedCurrencies.includes(currency)}
             onClick={() => toggleCurrency(currency)}
           />
         ))}
@@ -41,4 +40,5 @@ const CurrencySelection = () => {
     </div>
   );
 };
+
 export default CurrencySelection;
