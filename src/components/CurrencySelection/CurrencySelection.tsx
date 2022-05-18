@@ -8,7 +8,7 @@ const CurrencySelection = () => {
   const [selectedCurrencies, setSelectedCurrencies] = useState<string[]>([]);
 
   const filterOut = (currency: string) => (
-    setSelectedCurrencies(selectedCurrencies.filter((a) => a !== currency))
+    setSelectedCurrencies(selectedCurrencies.filter((listItem) => listItem !== currency))
   );
 
   const toggleCurrency = (currency: string) => {
@@ -33,6 +33,7 @@ const CurrencySelection = () => {
           <Button
             key={currency}
             title={currency}
+            selected={selectedCurrencies.includes(currency)}
             onClick={() => toggleCurrency(currency)}
           />
         ))}
